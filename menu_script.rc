@@ -1,0 +1,26 @@
+#pragma once
+
+#include "Resource.hpp"
+
+MENU_SCRIPT MENU
+{
+    POPUP "&Plik"
+    {
+        MENUITEM "&Nowy", 100
+        MENUITEM "&Otwórz", 101
+        MENUITEM "&Zapisz", 102
+        MENUITEM SEPARATOR
+        POPUP "&Importuj"
+        {
+            MENUITEM "&Tekst", 103
+            POPUP "O&braz"
+            {
+                MENUITEM "Bit&mapa", 104
+                MENUITEM "&JPEG", 105
+            }
+        }
+        MENUITEM SEPARATOR
+        MENUITEM "&Koniec", 106
+    }
+    MENUITEM "&Edycja", 108
+}
